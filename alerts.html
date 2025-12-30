@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Alerts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <aside class="sidebar">
+    <h2>Women Safety</h2>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li class="active"><a href="alerts.html">Alerts</a></li>
+      <li><a href="logs.html">Logs</a></li>
+    </ul>
+  </aside>
+
+  <main class="main">
+    <h1>Live Alerts</h1>
+    <div id="alerts"></div>
+  </main>
+</div>
+
+<script src="main.js"></script>
+<script>
+  loadAlerts();
+  setInterval(loadAlerts, 5000);
+</script>
+
+</body>
+</html>
