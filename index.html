@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Women Safety Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <aside class="sidebar">
+    <h2>Women Safety</h2>
+    <ul>
+      <li class="active"><a href="index.html">Dashboard</a></li>
+      <li><a href="alerts.html">Alerts</a></li>
+      <li><a href="logs.html">Logs</a></li>
+    </ul>
+  </aside>
+
+  <main class="main">
+    <h1>Dashboard</h1>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Total Alerts</h3>
+        <p id="totalAlerts">0</p>
+      </div>
+
+      <div class="card">
+        <h3>SOS Alerts</h3>
+        <p id="sosCount">0</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="main.js"></script>
+<script>
+  loadDashboard();
+  setInterval(loadDashboard, 5000);
+</script>
+
+</body>
+</html>
